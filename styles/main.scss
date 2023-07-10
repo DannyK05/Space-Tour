@@ -1,0 +1,61 @@
+//Global variables
+$background-color: #0B0D17;
+$purple: #D0D6F9;
+$cream: #FFFFFF;
+
+@mixin nav ($val){
+    @if $val == active{
+    border-bottom: 2px solid rgb(255, 255, 255) ;
+    }
+    @else if $val == hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    @else{
+        border-bottom: none;
+    }
+}
+
+@mixin dot ($val){
+    @if $val == active{
+        background-color:  rgb(255, 255, 255) ;
+    }
+    @else if $val == hover{
+        background-color:rgba(255, 255, 255, 0.5);
+    }
+    @else{
+        background-color:rgba(255, 255, 255, 0.2);
+    }
+}
+
+@mixin circle ($val){
+    @if $val == active{
+        background-color:  rgb(255, 255, 255) ;
+    }
+    @else if $val == hover{
+        border:1px solid rgba(255, 255, 255, 0.5);
+    }
+    @else{
+        background-color:1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+h1{
+    font: Bellefair Regular 150px;
+}
+
+h2{
+    font: Bellefair Regular 100px;
+}
+
+h3{
+    font: Bellefair Regular 56px;
+}
+
+h4{
+    font: Bellefair Regular 32px;
+}
+
+h5{
+    font: Barlow Condensed Regular 28px;
+    letter-spacing: 4.75;
+}
