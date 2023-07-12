@@ -40,22 +40,80 @@ $cream: #FFFFFF;
 }
 
 h1{
-    font: Bellefair Regular 150px;
+    font-family:'Bellefair', serif;
+    font-size: 150px;
 }
 
 h2{
-    font: Bellefair Regular 100px;
+    font-family:'Bellefair', serif;
+    font-size: 100px;
 }
 
 h3{
-    font: Bellefair Regular 56px;
+    font-family:'Bellefair', serif;
+    font-size: 56px;
 }
 
 h4{
-    font: Bellefair Regular 32px;
+    font-family:'Bellefair', serif;
+    font-size: 32px;
 }
 
 h5{
-    font: Barlow Condensed Regular 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
     letter-spacing: 4.75;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body.home{
+    background-image: url('C:\Users\user\Documents\__MACOSX\Completed\Frontend Mentor\SpaceTourism\assets\home\background-home-desktop.jpg');
+}
+
+.home main{
+    padding: 10vw 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button{
+       background-color: $cream; 
+       border-radius: 100%;
+       padding: 100px;
+       border: 0px;
+       
+    }
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 50px;
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: $cream;
+    height: auto;
+    margin: 20px 0px; 
+    padding: 10px 100px;
+    
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+}
+.home p{
+    width: 55ch;
 }
