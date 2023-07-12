@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/main.scss">
+  <link rel="stylesheet" href="styles/main.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body id='home' class="home">
   <header>
     <nav>
+      <img src="assets\favicon-32x32.png" alt="logo">
       <ul>
-        <li><a href="#">00 Home</a></li>
+        <li><a href="#home">00 Home</a></li>
         <li><a href="#">01 Destination</a></li>
         <li><a href="#">02 Crew</a></li>
         <li><a href="#">03 Technology</a></li>
@@ -24,15 +24,15 @@
     </nav>
   </header>
   <main>
- 
-  So, you want to travel to
-  Space
-  Let's face it; if you want to go to space, you might as well genuinely go to 
+    <div>
+  <h5>So, you want to travel to</h5>
+  <h1>Space</h1>
+  <p>Let's face it; if you want to go to space, you might as well genuinely go to 
   outer space and not hover kind of on the edge of it. Well sit back, and relax 
   because we'll give you a truly out of this world experience!
-
-  Explore
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</p>
+</div>
+  <button class="button" id="button">Explore</button>
   </main>
 </body>
 </html>
