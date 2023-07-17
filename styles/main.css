@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
@@ -30,7 +29,7 @@ h5 {
 }
 
 body.home {
-  background-image: url("C:Usersuser\documents__MACOSX\completed\frontend MentorSpaceTourism\assetshome஬kground-home-desktop.jpg");
+  background-image: url("/assets/home/background-home-desktop.jpg");
 }
 
 .home main {
