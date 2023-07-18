@@ -69,24 +69,8 @@ h5{
     box-sizing: border-box;
 }
 
-body.home{
-    background-image: url('C:\Users\user\Documents\__MACOSX\Completed\Frontend Mentor\SpaceTourism\assets\home\background-home-desktop.jpg');
-}
+body{
 
-.home main{
-    padding: 10vw 6vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .button{
-       background-color: $cream; 
-       border-radius: 100%;
-       padding: 100px;
-       border: 0px;
-       
-    }
-}
 nav{
 display: flex;
 justify-content: space-between;
@@ -114,6 +98,6 @@ a{
 }
 
 }
-.home p{
-    width: 55ch;
+
 }
+
