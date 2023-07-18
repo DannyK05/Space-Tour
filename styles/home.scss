@@ -1,0 +1,28 @@
+@import 'main';
+body.home{
+    background-image: url('\assets\home\background-home-desktop.jpg') ;
+
+main{
+    padding: 7vw 6vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        margin: 2vw 0;
+    }
+    h5{
+        margin: 2vw 0;
+    }
+    p{
+        width: 55ch;
+    }
+    .button{
+       background-color: $cream; 
+       border-radius: 100%;
+       padding: 100px;
+       border: 0px;
+       
+    }
+}
+}

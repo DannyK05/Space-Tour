@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
@@ -28,30 +29,13 @@ h5 {
   box-sizing: border-box;
 }
 
-body.home {
-  background-image: url("/assets/home/background-home-desktop.jpg");
-}
-
-.home main {
-  padding: 10vw 6vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.home main .button {
-  background-color: #FFFFFF;
-  border-radius: 100%;
-  padding: 100px;
-  border: 0px;
-}
-
-nav {
+body nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
 }
-nav ul {
+body nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,15 +44,36 @@ nav ul {
   margin: 20px 0px;
   padding: 10px 100px;
 }
-nav li {
+body nav li {
   list-style-type: none;
 }
-nav a {
+body nav a {
   color: black;
   text-decoration: none;
   margin-right: 30px;
 }
 
-.home p {
+body.home {
+  background-image: url("\assetshome஬kground-home-desktop.jpg");
+}
+body.home main {
+  padding: 7vw 6vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.home main h1 {
+  margin: 2vw 0;
+}
+body.home main h5 {
+  margin: 2vw 0;
+}
+body.home main p {
   width: 55ch;
-}/*# sourceMappingURL=main.css.map */
+}
+body.home main .button {
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  padding: 100px;
+  border: 0px;
+}/*# sourceMappingURL=home.css.map */
