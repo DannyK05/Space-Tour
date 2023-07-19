@@ -1,7 +1,7 @@
 @import 'main';
 body.home{
-    background-image: url('\assets\home\background-home-desktop.jpg') ;
-
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+    background-size: cover;
 main{
     padding: 7vw 6vw 5vw;
     display: flex;
@@ -18,11 +18,11 @@ main{
         width: 55ch;
     }
     .button{
-       background-color: $cream; 
+       background-color: $cream;
        border-radius: 100%;
        padding: 100px;
        border: 0px;
-       
+
     }
 }
 }

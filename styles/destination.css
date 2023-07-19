@@ -62,28 +62,7 @@ body nav a {
   margin-right: 30px;
 }
 
-body.home {
-  background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+body {
+  background: url("../assets/destination/background-destination-desktop.jpg") no-repeat;
   background-size: cover;
-}
-body.home main {
-  padding: 7vw 6vw 5vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body.home main h1 {
-  margin: 2vw 0;
-}
-body.home main h5 {
-  margin: 2vw 0;
-}
-body.home main p {
-  width: 55ch;
-}
-body.home main .button {
-  background-color: #FFFFFF;
-  border-radius: 100%;
-  padding: 100px;
-  border: 0px;
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=destination.css.map */
