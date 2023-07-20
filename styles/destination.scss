@@ -3,4 +3,57 @@
 body{
     background: url('../assets/destination/background-destination-desktop.jpg') no-repeat;
     background-size: cover;
+
+    .overall{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10vw;
+
+        .content{
+
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    
+                }
+                li{
+                    list-style-type: none;
+               
+                
+                a{
+                    color: $cream;
+                    text-decoration: none;
+                    margin-right: 30px;
+                }
+                a:hover{
+                    @include nav(hover);
+                    padding-bottom: 8px;
+                 }
+                 
+                 
+                }
+            }
+            p{
+                width: 48ch;
+            }
+            
+            .stats{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                span{
+                    width: 200px;
+                    p{
+                        width: 200px;
+                    }
+                }
+            }
+    
+        } 
+    }
 }
