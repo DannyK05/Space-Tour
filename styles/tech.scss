@@ -3,4 +3,44 @@
 body{
     background: url('../assets/technology/background-technology-desktop.jpg') no-repeat;
     background-size: cover;
+
+    main{
+        .overall{
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+
+            .num{
+                display: flex;
+                justify-content: space-around;
+                align-items: center ; 
+                flex-direction: column;
+               span{
+                margin: 40px 0px;
+                a{
+                    color: $cream;
+                    padding: 25px;
+                    text-decoration: none;
+                    border-radius: 100%;
+                    @include circle(none);
+                }
+                a:hover{
+                    @include circle(hover)
+                }
+               } 
+               
+            }
+            
+            .content{
+                padding: 5vw;
+                
+                p{
+                    width: 48ch;
+                }
+                
+            }
+        }
+
+        
+    }
 }

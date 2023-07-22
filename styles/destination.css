@@ -99,6 +99,9 @@ body .overall .content nav li a:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
   padding-bottom: 8px;
 }
+body .overall .content h1 {
+  margin: 2vw 0;
+}
 body .overall .content p {
   width: 48ch;
 }

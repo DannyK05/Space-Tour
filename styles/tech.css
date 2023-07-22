@@ -75,4 +75,34 @@ body header nav ul li a:active {
 body {
   background: url("../assets/technology/background-technology-desktop.jpg") no-repeat;
   background-size: cover;
+}
+body main .overall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .overall .num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+body main .overall .num span {
+  margin: 40px 0px;
+}
+body main .overall .num span a {
+  color: #FFFFFF;
+  padding: 25px;
+  text-decoration: none;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body main .overall .num span a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+body main .overall .content {
+  padding: 5vw;
+}
+body main .overall .content p {
+  width: 48ch;
 }/*# sourceMappingURL=tech.css.map */
