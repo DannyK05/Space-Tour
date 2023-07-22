@@ -3,7 +3,7 @@ body.home{
     background: url("../assets/home/background-home-desktop.jpg") no-repeat;
     background-size: cover;
 main{
-    padding: 7vw 6vw 5vw;
+    padding: 7vw 6vw 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,3 +26,28 @@ main{
     }
 }
 }
+@media (max-width:480px){
+body{
+    background-image: url(assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+    main{
+        flex-direction: column;
+       
+    }
+}
+}
+
+@media(min-width:481px) and (max-width:768px){
+    body{
+    background: url(assets/home/background-home-tablet.jpg) no-repeat;
+    background-size: cover;
+    }
+}
+

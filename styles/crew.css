@@ -75,4 +75,26 @@ body header nav ul li a:active {
 body {
   background: url("../assets/crew/background-crew-desktop.jpg") no-repeat;
   background-size: cover;
+}
+body main .overall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+body main .overall .content {
+  padding: 5vw;
+}
+body main .overall .content p {
+  width: 48ch;
+}
+body main .overall .content #mode a {
+  padding: 1px 10px;
+  width: 10px;
+  margin-right: 16px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body main .overall .content #mode a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=crew.css.map */

@@ -3,4 +3,34 @@
 body{
     background: url('../assets/crew/background-crew-desktop.jpg') no-repeat;
     background-size: cover;
+    main{
+        .overall{
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+            flex-direction: row-reverse;
+            
+            .content{
+                padding: 5vw;
+                p{
+                    width: 48ch;
+                }
+                #mode{
+                    
+                   a{
+                        padding: 1px 10px;
+                        width: 10px;
+                        margin-right: 16px;
+                        border-radius: 100%;
+                        @include dot(none);
+                    }
+                    a:hover{
+                        @include dot(hover)
+                    }
+                }
+            }
+        }
+
+        
+    }
 }
