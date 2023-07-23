@@ -2,24 +2,28 @@ h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: "Bellefair", serif;
   font-size: 100px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Bellefair", serif;
   font-size: 56px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h4 {
   font-family: "Bellefair", serif;
   font-size: 32px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -27,10 +31,12 @@ h5 {
   font-size: 28px;
   letter-spacing: 4.75;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 p {
   color: #FFFFFF;
+  line-height: 25px;
 }
 
 * {
@@ -43,6 +49,10 @@ body header nav {
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+}
+body header nav hr {
+  width: 20vw;
+  z-index: 1000;
 }
 body header nav ul {
   display: flex;
@@ -71,48 +81,72 @@ body header nav ul li a:active {
   border-bottom: 2px solid rgb(255, 255, 255);
   padding-bottom: 30px;
 }
+body main {
+  padding: 0px 50px;
+}
+
+hr {
+  border: 0.2px solid rgba(255, 255, 255, 0.2);
+}
 
 body {
   background: url("../assets/destination/background-destination-desktop.jpg") no-repeat;
   background-size: cover;
 }
-body .overall {
+body main .overall {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 10vw;
 }
-body .overall .content nav ul {
+body main .overall .content {
+  padding: 40px 0px;
+}
+body main .overall .content nav {
+  width: inherit;
+}
+body main .overall .content nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0px;
 }
-body .overall .content nav li {
+body main .overall .content nav li {
   list-style-type: none;
 }
-body .overall .content nav li a {
+body main .overall .content nav li a {
   color: #FFFFFF;
   text-decoration: none;
   margin-right: 30px;
 }
-body .overall .content nav li a:hover {
+body main .overall .content nav li a:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
   padding-bottom: 8px;
 }
-body .overall .content h1 {
+body main .overall .content h2 {
   margin: 2vw 0;
 }
-body .overall .content p {
+body main .overall .content p {
   width: 48ch;
 }
-body .overall .content .stats {
+body main .overall .content .stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .overall .content .stats span {
+body main .overall .content .stats span {
   width: 200px;
 }
-body .overall .content .stats span p {
+body main .overall .content .stats span p {
   width: 200px;
+}
+body main .overall .content .stats span p:nth-child(2) {
+  font-family: "Bellefair" serif;
+  font-size: 28px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.content > p {
+  margin-bottom: 4vw;
 }/*# sourceMappingURL=destination.css.map */

@@ -44,24 +44,28 @@ h1{
     font-family:'Bellefair', serif;
     font-size: 150px;
     color: $cream;
+    text-transform: uppercase;
 }
 
 h2{
     font-family:'Bellefair', serif;
     font-size: 100px;
     color: $cream;
+    text-transform: uppercase;
 }
 
 h3{
     font-family:'Bellefair', serif;
     font-size: 56px;
     color: $cream;
+    text-transform: uppercase;
 }
 
 h4{
     font-family:'Bellefair', serif;
     font-size: 32px;
     color: $cream;
+    text-transform: uppercase;
 }
 
 h5{
@@ -69,9 +73,11 @@ h5{
     font-size: 28px;
     letter-spacing: 4.75;
     color: $cream;
+    text-transform: uppercase;
 }
 p{
     color: $cream;
+    line-height: 25px;
 }
 
 *{
@@ -79,6 +85,7 @@ p{
 }
 
 body{
+    
 header{
 nav{
 display: flex;
@@ -86,7 +93,10 @@ justify-content: space-between;
 align-items: center;
 padding-left: 50px;
 cursor: pointer;
-
+hr{
+    width: 20vw;
+    z-index: 1000;
+}
 ul{
     display: flex;
     justify-content: space-between;
@@ -123,6 +133,12 @@ ul{
 }
 
 }
+main{
+    padding: 0px 50px;
+}
+}
+hr{
+    border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width:480px){
