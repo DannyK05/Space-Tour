@@ -77,7 +77,7 @@ h5{
 }
 p{
     color: $cream;
-    line-height: 25px;
+    line-height: 27px;
 }
 
 *{
@@ -94,8 +94,9 @@ align-items: center;
 padding-left: 50px;
 cursor: pointer;
 hr{
-    width: 20vw;
-    z-index: 1000;
+    width: 50vw;
+    left: 180px;
+    position: absolute;
 }
 ul{
     display: flex;
@@ -135,6 +136,11 @@ ul{
 }
 main{
     padding: 0px 50px;
+
+    h5 span{
+        color: rgba(255, 255, 255, 0.5);
+        margin-right: 5px;
+    }
 }
 }
 hr{

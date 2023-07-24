@@ -36,7 +36,7 @@ h5 {
 
 p {
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 * {
@@ -51,8 +51,9 @@ body header nav {
   cursor: pointer;
 }
 body header nav hr {
-  width: 20vw;
-  z-index: 1000;
+  width: 50vw;
+  left: 180px;
+  position: absolute;
 }
 body header nav ul {
   display: flex;
@@ -84,6 +85,10 @@ body header nav ul li a:active {
 body main {
   padding: 0px 50px;
 }
+body main h5 span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 5px;
+}
 
 hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
@@ -108,11 +113,23 @@ body.home main h5 {
 body.home main p {
   width: 55ch;
 }
-body.home main .button {
+body.home main .explore {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 80px;
+  border-radius: 100%;
+  visibility: hidden;
+}
+body.home main .explore .button {
   background-color: #FFFFFF;
   border-radius: 100%;
   padding: 100px;
   border: 0px;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.button:hover .explore {
+  visibility: visible;
 }
 
 @media (max-width: 480px) {

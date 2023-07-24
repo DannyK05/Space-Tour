@@ -36,7 +36,7 @@ h5 {
 
 p {
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 * {
@@ -51,8 +51,9 @@ body header nav {
   cursor: pointer;
 }
 body header nav hr {
-  width: 20vw;
-  z-index: 1000;
+  width: 50vw;
+  left: 180px;
+  position: absolute;
 }
 body header nav ul {
   display: flex;
@@ -83,6 +84,10 @@ body header nav ul li a:active {
 }
 body main {
   padding: 0px 50px;
+}
+body main h5 span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 5px;
 }
 
 hr {

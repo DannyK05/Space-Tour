@@ -16,15 +16,26 @@ main{
     }
     p{
         width: 55ch;
-    }
-    .button{
-       background-color: $cream;
-       border-radius: 100%;
-       padding: 100px;
-       border: 0px;
-
+    } 
+    .explore{
+        background-color: rgba($color: $cream, $alpha: 0.5);
+        padding: 80px;
+        border-radius: 100%;
+        visibility: hidden;
+   
+        .button{
+        background-color: $cream;
+        border-radius: 100%;
+        padding: 100px;
+        border: 0px;
+        visibility: visible;
+        cursor: pointer;
+        }
     }
 }
+}
+.button:hover .explore{
+    visibility: visible;
 }
 @media (max-width:480px){
 body{
