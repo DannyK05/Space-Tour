@@ -2,24 +2,28 @@ h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: "Bellefair", serif;
   font-size: 100px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Bellefair", serif;
   font-size: 56px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h4 {
   font-family: "Bellefair", serif;
   font-size: 32px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -27,10 +31,12 @@ h5 {
   font-size: 28px;
   letter-spacing: 4.75;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 p {
   color: #FFFFFF;
+  line-height: 27px;
 }
 
 * {
@@ -43,6 +49,11 @@ body header nav {
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+}
+body header nav hr {
+  width: 50vw;
+  left: 180px;
+  position: absolute;
 }
 body header nav ul {
   display: flex;
@@ -71,6 +82,17 @@ body header nav ul li a:active {
   border-bottom: 2px solid rgb(255, 255, 255);
   padding-bottom: 30px;
 }
+body main {
+  padding: 0px 50px;
+}
+body main h5 span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 5px;
+}
+
+hr {
+  border: 0.2px solid rgba(255, 255, 255, 0.2);
+}
 
 body.home {
   background: url("../assets/home/background-home-desktop.jpg") no-repeat;
@@ -91,11 +113,23 @@ body.home main h5 {
 body.home main p {
   width: 55ch;
 }
-body.home main .button {
+body.home main .explore {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 80px;
+  border-radius: 100%;
+  visibility: hidden;
+}
+body.home main .explore .button {
   background-color: #FFFFFF;
   border-radius: 100%;
   padding: 100px;
   border: 0px;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.button:hover .explore {
+  visibility: visible;
 }
 
 @media (max-width: 480px) {
