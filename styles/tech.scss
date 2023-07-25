@@ -44,3 +44,61 @@ body{
         
     }
 }
+
+@media(max-width:480px){
+    body{
+        
+        header{
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+        }
+        main{
+            
+           
+           p{
+            width: 42ch;
+           }
+
+           .overall{
+            flex-direction: column-reverse;
+            .num{
+                flex-direction: row;
+                span{
+                    margin: 0px 10px;
+                }
+            }
+        }
+        }
+
+       
+    }
+    }
+    
+    @media(min-width:481px) and (max-width:768px){
+        body{
+        background: url("../assets/technology/background-technology-tablet.jpg") no-repeat;
+        background-size: cover;
+
+        main{
+            
+           
+            p{
+             width: 42ch;
+            }
+            .overall{
+             flex-direction: column-reverse;
+             .num{
+                 flex-direction: row;
+                 span{
+                     margin: 0px 10px;
+                 }
+             }
+         }
+         }
+ 
+        }
+    }
+    

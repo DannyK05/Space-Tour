@@ -37,9 +37,9 @@ main{
 .button:hover .explore{
     visibility: visible;
 }
-@media (max-width:480px){
-body{
-    background-image: url(assets/home/background-home-mobile.jpg);
+@media(max-width:480px){
+body.home{
+    background: url("../assets/home/background-home-mobile.jpg") no-repeat;
     background-size: cover;
     header{
         nav{
@@ -51,14 +51,25 @@ body{
     main{
         flex-direction: column;
        
+       p{
+        width: 42ch;
+       }
     }
 }
 }
 
 @media(min-width:481px) and (max-width:768px){
-    body{
-    background: url(assets/home/background-home-tablet.jpg) no-repeat;
+    body.home{
+    background: url("../assets/home/background-home-tablet.jpg") no-repeat;
     background-size: cover;
+
+    main{
+        flex-direction: column;
+       
+       p{
+        width: 50ch;
+       }
+    }
     }
 }
 

@@ -1,3 +1,18 @@
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #0B0D17;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
 h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
@@ -36,7 +51,7 @@ h5 {
 
 p {
   color: #FFFFFF;
-  line-height: 27px;
+  line-height: 1.8em;
 }
 
 * {
@@ -49,11 +64,13 @@ body header nav {
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+  z-index: 1;
 }
 body header nav hr {
-  width: 50vw;
+  width: 42vw;
   left: 180px;
   position: absolute;
+  z-index: 7;
 }
 body header nav ul {
   display: flex;
@@ -94,6 +111,11 @@ hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  header nav hr {
+    display: none;
+  }
+}
 body {
   background: url("../assets/technology/background-technology-desktop.jpg") no-repeat;
   background-size: cover;
@@ -127,4 +149,40 @@ body main .overall .content {
 }
 body main .overall .content p {
   width: 48ch;
+}
+
+@media (max-width: 480px) {
+  body header nav ul {
+    display: none;
+  }
+  body main p {
+    width: 42ch;
+  }
+  body main .overall {
+    flex-direction: column-reverse;
+  }
+  body main .overall .num {
+    flex-direction: row;
+  }
+  body main .overall .num span {
+    margin: 0px 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: url("../assets/technology/background-technology-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main p {
+    width: 42ch;
+  }
+  body main .overall {
+    flex-direction: column-reverse;
+  }
+  body main .overall .num {
+    flex-direction: row;
+  }
+  body main .overall .num span {
+    margin: 0px 10px;
+  }
 }/*# sourceMappingURL=tech.css.map */
