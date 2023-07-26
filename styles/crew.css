@@ -1,3 +1,18 @@
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #0B0D17;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
 h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
@@ -36,7 +51,7 @@ h5 {
 
 p {
   color: #FFFFFF;
-  line-height: 27px;
+  line-height: 1.8em;
 }
 
 * {
@@ -49,11 +64,13 @@ body header nav {
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+  z-index: 1;
 }
 body header nav hr {
-  width: 50vw;
+  width: 42vw;
   left: 180px;
   position: absolute;
+  z-index: 7;
 }
 body header nav ul {
   display: flex;
@@ -94,6 +111,16 @@ hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  body header nav hr {
+    display: none;
+  }
+  body header nav ul {
+    width: 500px;
+    margin: 0px;
+    padding: 30px 20px;
+  }
+}
 body {
   background: url("../assets/crew/background-crew-desktop.jpg") no-repeat;
   background-size: cover;
@@ -115,9 +142,11 @@ body main .overall .content h3 {
 }
 body main .overall .content h4 {
   margin-bottom: 2vw;
+  color: rgba(255, 255, 255, 0.5);
 }
 body main .overall .content p {
   width: 48ch;
+  color: #D0D6F9;
 }
 body main .overall .content .mode {
   margin-top: 120px;
@@ -131,4 +160,42 @@ body main .overall .content .mode a {
 }
 body main .overall .content .mode a:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 480px) {
+  body {
+    background: url("../assets/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body main p {
+    width: 42ch;
+  }
+  body main .overall {
+    flex-direction: column;
+  }
+  body main .overall .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: url("../assets/crew/background-crew-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main p {
+    width: 42ch;
+  }
+  body main .overall {
+    flex-direction: column-reverse;
+  }
+  body main .overall .content .mode {
+    width: 170px;
+    margin: 50px auto 0px;
+  }
 }/*# sourceMappingURL=crew.css.map */

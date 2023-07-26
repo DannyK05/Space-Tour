@@ -20,9 +20,11 @@ body{
                 }
                 h4{
                     margin-bottom: 2vw;
+                    color: rgba($color: $cream, $alpha: 0.5);
                 }
                 p{
                     width: 48ch;
+                    color: $purple;
                 }
                 .mode{
                     margin-top: 120px ;
@@ -43,3 +45,56 @@ body{
         
     }
 }
+
+@media(max-width:480px){
+    body{
+        background: url("../assets/crew/background-crew-mobile.jpg") no-repeat;
+        background-size: cover;
+        header{
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+        }
+        main{
+           
+           p{
+            width: 42ch;
+           }
+           .overall{
+            flex-direction: column;
+            .content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column-reverse;
+            }
+        }
+        }
+    }
+    }
+    
+    @media(min-width:481px) and (max-width:768px){
+        body{
+        background: url("../assets/crew/background-crew-tablet.jpg") no-repeat;
+        background-size: cover;
+
+        main{
+           
+            p{
+             width: 42ch;
+            }
+            .overall{
+             flex-direction: column-reverse;
+             .content{
+                .mode{
+                    width: 170px;
+                    margin: 50px auto 0px;
+                } 
+             }
+         }
+         }
+        }
+    }
+    

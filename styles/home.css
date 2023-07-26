@@ -1,3 +1,18 @@
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #0B0D17;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
 h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
@@ -36,7 +51,7 @@ h5 {
 
 p {
   color: #FFFFFF;
-  line-height: 27px;
+  line-height: 1.8em;
 }
 
 * {
@@ -49,11 +64,13 @@ body header nav {
   align-items: center;
   padding-left: 50px;
   cursor: pointer;
+  z-index: 1;
 }
 body header nav hr {
-  width: 50vw;
+  width: 42vw;
   left: 180px;
   position: absolute;
+  z-index: 7;
 }
 body header nav ul {
   display: flex;
@@ -94,6 +111,16 @@ hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  body header nav hr {
+    display: none;
+  }
+  body header nav ul {
+    width: 500px;
+    margin: 0px;
+    padding: 30px 20px;
+  }
+}
 body.home {
   background: url("../assets/home/background-home-desktop.jpg") no-repeat;
   background-size: cover;
@@ -104,14 +131,15 @@ body.home main {
   justify-content: space-between;
   align-items: center;
 }
-body.home main h1 {
+body.home main .content h1 {
   margin: 2vw 0;
 }
-body.home main h5 {
+body.home main .content h5 {
   margin: 2vw 0;
 }
-body.home main p {
+body.home main .content p {
   width: 55ch;
+  color: #D0D6F9;
 }
 body.home main .explore {
   background-color: rgba(255, 255, 255, 0.5);
@@ -127,26 +155,41 @@ body.home main .explore .button {
   visibility: visible;
   cursor: pointer;
 }
+body.home main .explore .button p {
+  color: #0B0D17;
+  font-family: "Bellefair", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
 .button:hover .explore {
   visibility: visible;
 }
 
 @media (max-width: 480px) {
-  body {
-    background-image: url(assets/home/background-home-mobile.jpg);
+  body.home {
+    background: url("../assets/home/background-home-mobile.jpg") no-repeat;
     background-size: cover;
   }
-  body header nav ul {
+  body.home header nav ul {
     display: none;
   }
-  body main {
+  body.home main {
     flex-direction: column;
+  }
+  body.home main .content p {
+    width: 42ch;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  body {
-    background: url(assets/home/background-home-tablet.jpg) no-repeat;
+  body.home {
+    background: url("../assets/home/background-home-tablet.jpg") no-repeat;
     background-size: cover;
+  }
+  body.home main {
+    flex-direction: column;
+  }
+  body.home main .content p {
+    width: 50ch;
   }
 }/*# sourceMappingURL=home.css.map */
