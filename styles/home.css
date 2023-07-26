@@ -177,8 +177,12 @@ body.home main .explore .button p {
   body.home main {
     flex-direction: column;
   }
+  body.home main .content {
+    text-align: center;
+  }
   body.home main .content p {
     width: 42ch;
+    margin: 10px auto;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

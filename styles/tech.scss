@@ -73,7 +73,7 @@ body{
 
 @media(max-width:480px){
     body{
-        
+        width: 100%;
         header{
             nav{
                 ul{
@@ -104,8 +104,8 @@ body{
              
 
             .tech-img{
-               min-width: 768px;
-               min-height: 310;
+               min-width: 626px;
+               min-height: 310px;
             }
             .vehicle{
                 background:url("../assets/technology/image-launch-vehicle-landscape.jpg") no-repeat ;

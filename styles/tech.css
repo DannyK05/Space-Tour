@@ -183,6 +183,9 @@ body main .overall .capsule {
 }
 
 @media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
   body header nav ul {
     display: none;
   }
@@ -203,8 +206,8 @@ body main .overall .capsule {
     margin: 40px 10px;
   }
   body main .overall .tech-img {
-    min-width: 768px;
-    min-height: 310;
+    min-width: 626px;
+    min-height: 310px;
   }
   body main .overall .vehicle {
     background: url("../assets/technology/image-launch-vehicle-landscape.jpg") no-repeat;

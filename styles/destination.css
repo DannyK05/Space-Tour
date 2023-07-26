@@ -204,6 +204,10 @@ body main .overall .content .stats span p:nth-child(2) {
   body main .overall {
     flex-direction: column;
   }
+  body main .overall .planet img {
+    width: 250px;
+    height: auto;
+  }
   body main .overall .content .stats {
     flex-direction: column;
   }

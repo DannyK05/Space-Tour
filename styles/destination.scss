@@ -102,7 +102,12 @@ body{
             
             .overall{
                 flex-direction: column;
-
+                .planet{
+                    img{
+                        width: 250px;
+                        height: auto;
+                    }
+                 }
                 .content{
                     .stats{
                         flex-direction: column;

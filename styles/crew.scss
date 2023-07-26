@@ -64,11 +64,19 @@ body{
            }
            .overall{
             flex-direction: column;
+            .crew{
+                border-bottom:1px solid rgba(255,255,255, 0.5) ;
+                img{
+                    height: 500px ;
+                    width: auto;
+                }
+            }
             .content{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column-reverse;
+                height: 450px;
             }
         }
         }

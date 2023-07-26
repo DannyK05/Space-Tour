@@ -176,11 +176,19 @@ body main .overall .content .mode a:hover {
   body main .overall {
     flex-direction: column;
   }
+  body main .overall .crew {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  body main .overall .crew img {
+    height: 500px;
+    width: auto;
+  }
   body main .overall .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
+    height: 450px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

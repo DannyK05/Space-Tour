@@ -60,8 +60,10 @@ body.home{
     main{
         flex-direction: column;
        .content{
+        text-align: center;
         p{
             width: 42ch;
+            margin: 10px auto;
            }
        }
        
