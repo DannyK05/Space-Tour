@@ -112,8 +112,13 @@ hr {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  header nav hr {
+  body header nav hr {
     display: none;
+  }
+  body header nav ul {
+    width: 500px;
+    margin: 0px;
+    padding: 30px 20px;
   }
 }
 body {
@@ -144,7 +149,7 @@ body main .overall .content nav li {
   list-style-type: none;
 }
 body main .overall .content nav li a {
-  color: #FFFFFF;
+  color: #D0D6F9;
   text-decoration: none;
   margin-right: 30px;
 }
@@ -158,11 +163,14 @@ body main .overall .content h2 {
 }
 body main .overall .content p {
   width: 48ch;
+  color: #D0D6F9;
 }
 body main .overall .content .stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 450px;
+  margin: 10px auto;
 }
 body main .overall .content .stats span {
   width: 200px;
@@ -170,10 +178,14 @@ body main .overall .content .stats span {
 body main .overall .content .stats span p {
   width: 200px;
 }
+body main .overall .content .stats span p:nth-child(1) {
+  color: #D0D6F9;
+}
 body main .overall .content .stats span p:nth-child(2) {
   font-family: "Bellefair" serif;
   font-size: 28px;
   margin-top: 5px;
+  color: #FFFFFF;
   text-transform: uppercase;
 }
 

@@ -112,8 +112,13 @@ hr {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  header nav hr {
+  body header nav hr {
     display: none;
+  }
+  body header nav ul {
+    width: 500px;
+    margin: 0px;
+    padding: 30px 20px;
   }
 }
 body {
@@ -125,30 +130,56 @@ body main .overall {
   justify-content: space-between;
   align-items: center;
 }
-body main .overall .num {
+body main .overall .content {
+  padding: 5vw 5vw 5vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .overall .content .text {
+  padding: 0vw 8vw;
+}
+body main .overall .content .num {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
-body main .overall .num span {
+body main .overall .content .num span {
   margin: 40px 0px;
 }
-body main .overall .num span a {
+body main .overall .content .num span a {
   color: #FFFFFF;
   padding: 25px;
   text-decoration: none;
   border-radius: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-body main .overall .num span a:hover {
+body main .overall .content .num span a:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-body main .overall .content {
-  padding: 5vw;
+body main .overall .content h4 {
+  margin: 1vw 0px 1.5vw;
 }
 body main .overall .content p {
   width: 48ch;
+  color: #D0D6F9;
+}
+body main .overall .tech-img {
+  min-width: 515px;
+  min-height: 527px;
+}
+body main .overall .vehicle {
+  background: url("../assets/technology/image-launch-vehicle-portrait.jpg") no-repeat;
+  background-size: cover;
+}
+body main .overall .spaceport {
+  background: url("../assets/technology/image-spaceport-portrait.jpg") no-repeat;
+  background-size: cover;
+}
+body main .overall .capsule {
+  background: url("../assets/technology/image-space-capsule-portrait.jpg") no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 480px) {
@@ -160,12 +191,32 @@ body main .overall .content p {
   }
   body main .overall {
     flex-direction: column-reverse;
+    text-align: center;
   }
-  body main .overall .num {
+  body main .overall .content {
+    flex-direction: column;
+  }
+  body main .overall .content .num {
     flex-direction: row;
   }
-  body main .overall .num span {
-    margin: 0px 10px;
+  body main .overall .content .num span {
+    margin: 40px 10px;
+  }
+  body main .overall .tech-img {
+    min-width: 768px;
+    min-height: 310;
+  }
+  body main .overall .vehicle {
+    background: url("../assets/technology/image-launch-vehicle-landscape.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main .overall .spaceport {
+    background: url("../assets/technology/image-spaceport-landscape.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main .overall .capsule {
+    background: url("../assets/technology/image-space-capsule-landscape.jpg") no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -178,11 +229,31 @@ body main .overall .content p {
   }
   body main .overall {
     flex-direction: column-reverse;
+    text-align: center;
   }
-  body main .overall .num {
+  body main .overall .content {
+    flex-direction: column;
+  }
+  body main .overall .content .num {
     flex-direction: row;
   }
-  body main .overall .num span {
-    margin: 0px 10px;
+  body main .overall .content .num span {
+    margin: 40px 10px;
+  }
+  body main .overall .tech-img {
+    min-width: 768px;
+    min-height: 310px;
+  }
+  body main .overall .vehicle {
+    background: url("../assets/technology/image-launch-vehicle-landscape.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main .overall .spaceport {
+    background: url("../assets/technology/image-spaceport-landscape.jpg") no-repeat;
+    background-size: cover;
+  }
+  body main .overall .capsule {
+    background: url("../assets/technology/image-space-capsule-landscape.jpg") no-repeat;
+    background-size: cover;
   }
 }/*# sourceMappingURL=tech.css.map */

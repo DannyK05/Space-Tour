@@ -172,14 +172,20 @@ hr{
 }
 
 @media(min-width:481px) and (max-width:768px){
-    header{
-        nav{
-            hr{
-                display: none;
+    body{
+            header{
+            nav{
+                hr{
+                    display: none;
+                }
+                ul{
+                    width: 500px;
+                    margin: 0px;
+                    padding: 30px 20px;
+                }
+                
             }
-            
         }
+    
     }
-   
 }
-

@@ -31,7 +31,7 @@ body{
                 
                     
                     a{
-                        color: $cream;
+                        color: $purple;
                         text-decoration: none;
                         margin-right: 30px;
                     }
@@ -51,22 +51,29 @@ body{
 
                 p{
                     width: 48ch;
+                    color: $purple;
                 }
                 
                 .stats{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    max-width: 450px;
+                    margin: 10px auto;
                     
                     span{
                         width: 200px;
                         p{
                             width: 200px;
                         }
+                        p:nth-child(1){
+                            color: $purple;
+                        }
                         p:nth-child(2){
                             font-family: "Bellefair" serif;
                             font-size: 28px;
                             margin-top: 5px;
+                            color: $cream;
                             text-transform: uppercase;
                         }
                     }
@@ -128,6 +135,9 @@ body{
                 text-align: center;
                 p{
                 width: 70ch;
+                }
+                .stats{
+                    
                 }
             }
             }
