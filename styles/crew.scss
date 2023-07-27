@@ -58,17 +58,29 @@ body{
             }
         }
         main{
+           padding: 0px;
            
-           p{
-            width: 42ch;
-           }
            .overall{
             flex-direction: column;
+            .crew{
+                border-bottom:1px solid rgba(255,255,255, 0.5) ;
+                img{
+                    height: 500px ;
+                    width: auto;
+                }
+            }
             .content{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column-reverse;
+                height: 450px;
+                padding: 10px;
+                text-align: center;
+                p{
+                    width: 42ch;
+                    margin: 0px auto;
+                   }
             }
         }
         }
