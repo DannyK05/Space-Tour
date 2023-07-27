@@ -58,10 +58,8 @@ body{
             }
         }
         main{
+           padding: 0px;
            
-           p{
-            width: 42ch;
-           }
            .overall{
             flex-direction: column;
             .crew{
@@ -77,6 +75,12 @@ body{
                 align-items: center;
                 flex-direction: column-reverse;
                 height: 450px;
+                padding: 10px;
+                text-align: center;
+                p{
+                    width: 42ch;
+                    margin: 0px auto;
+                   }
             }
         }
         }

@@ -170,8 +170,8 @@ body main .overall .content .mode a:hover {
   body header nav ul {
     display: none;
   }
-  body main p {
-    width: 42ch;
+  body main {
+    padding: 0px;
   }
   body main .overall {
     flex-direction: column;
@@ -189,6 +189,12 @@ body main .overall .content .mode a:hover {
     align-items: center;
     flex-direction: column-reverse;
     height: 450px;
+    padding: 10px;
+    text-align: center;
+  }
+  body main .overall .content p {
+    width: 42ch;
+    margin: 0px auto;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

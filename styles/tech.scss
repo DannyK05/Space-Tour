@@ -94,6 +94,10 @@ body{
             text-align: center;
             .content{
                 flex-direction: column;
+                padding: 0px;
+                .text{
+                    padding: 0px;
+                }
                 .num{
                     flex-direction: row;
                     span{
@@ -104,20 +108,23 @@ body{
              
 
             .tech-img{
-               min-width: 626px;
+               min-width: 100vw;
                min-height: 310px;
             }
             .vehicle{
                 background:url("../assets/technology/image-launch-vehicle-landscape.jpg") no-repeat ;
                 background-size: cover ;
+                background-position: center center;
             }
             .spaceport{
                 background:url("../assets/technology/image-spaceport-landscape.jpg") no-repeat; 
                 background-size: cover ;
+                background-position: center center;
                    }
             .capsule{
                 background:url("../assets/technology/image-space-capsule-landscape.jpg") no-repeat;
                 background-size: cover ;
+                background-position: center center;
             }
             
         }
