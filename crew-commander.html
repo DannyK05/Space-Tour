@@ -15,10 +15,12 @@
     <nav>
       <img src="./assets/shared/logo.svg" alt="logo">
       <hr>
-      <ul>
+      <a id="hamburger" ><img src="./assets/shared/icon-hamburger.svg" alt="icon"></a>
+      <ul class="options">
+        <li><a id="icon-close"><img src="./assets/shared/icon-close.svg" alt="icon"></a></li>
         <li><a href="index.html">00 Home</a></li>
         <li><a href="destination-moon.html">01 Destination</a></li>
-        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a class="active" href="crew-commander.html">02 Crew</a></li>
         <li><a href="technology-vehicle.html">03 Technology</a></li>
       </ul>
     </nav>
@@ -40,10 +42,17 @@
   commander of Crew Dragon Demo-2.</p>
 </div> 
   <div class="mode" id="mode">
-  <span><a title="Commander" href="crew-commander.html#content"></a></span> <span><a title="Specialist" href="crew-specialist.html#content"></a></span> <span><a title="Pilot" href="crew-pilot.html#content"></a></span> <span><a title="Engineer" href="crew-engineer.html#content"></a></span>
+  <span><a title="Commander"  class="active" href="crew-commander.html#content"></a></span> 
+  <span><a title="Specialist" href="crew-specialist.html#content"></a></span> 
+  <span><a title="Pilot" href="crew-pilot.html#content"></a></span> 
+  <span><a title="Engineer" href="crew-engineer.html#content"></a></span>
 </div>
 </div>
 </div>
 </main>
+<!-- Script link for hamburger option -->
+<script src="./js/nav.js"></script>
+<!-- Script for jquery -->
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </body>
 </html>

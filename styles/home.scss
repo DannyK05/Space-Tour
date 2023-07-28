@@ -1,5 +1,5 @@
 @import 'main';
-body.home{
+body{
     background: url("../assets/home/background-home-desktop.jpg") no-repeat;
     background-size: cover;
 main{
@@ -19,13 +19,15 @@ main{
             color: $purple;
         } 
     }
-    
+    .explore:hover{
+        visibility: visible;
+        transition: 0.4s;
+    }
     .explore{
         background-color: rgba($color: $cream, $alpha: 0.5);
         padding: 80px;
         border-radius: 100%;
         visibility: hidden;
-   
         .button{
         background-color: $cream;
         border-radius: 100%;
@@ -43,16 +45,14 @@ main{
     }
 }
 }
-.button:hover .explore{
-    visibility: visible;
-}
+
 @media(max-width:480px){
-body.home{
+body{
     background: url("../assets/home/background-home-mobile.jpg") no-repeat;
     background-size: cover;
     header{
         nav{
-            ul{
+            ul.options{
                 display: none;
             }
         }
@@ -68,11 +68,14 @@ body.home{
        }
        
     }
+    .explore{
+        padding: 50%;
+    }
 }
 }
 
 @media(min-width:481px) and (max-width:768px){
-    body.home{
+    body{
     background: url("../assets/home/background-home-tablet.jpg") no-repeat;
     background-size: cover;
 

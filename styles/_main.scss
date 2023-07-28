@@ -3,14 +3,6 @@ $background-color: #0B0D17;
 $purple: #D0D6F9;
 $cream: #FFFFFF;
 
-// @font-face {
-//     font-family:"Bellefair", serif ;
-//     src: url("../fonts/Bellefair/Bellefair-Regular.ttf");
-
-//     h1, h2, h3{
-//         font-family: "Bellefair" serif;
-//     }
-// }
 //Scroll-bar
 html::-webkit-scrollbar{
     width: .8rem;
@@ -125,6 +117,9 @@ hr{
     position: absolute;
     z-index: 7;
 }
+#hamburger{
+    display: none;
+}
 ul{
     display: flex;
     justify-content: space-between;
@@ -140,7 +135,9 @@ ul{
 
     li{
     list-style-type: none;
-
+    #icon-close{
+        display: none;
+    }
 
     a{
     color: $cream;
@@ -155,6 +152,12 @@ ul{
  a:active{
      @include nav(active);
      padding-bottom: 30px;
+     color: $cream;
+ }
+ a.active{
+    @include nav(active);
+     padding-bottom: 30px;
+     color: $cream;
  }
     }
     }
@@ -175,7 +178,86 @@ hr{
 }
 
 @media (max-width:480px){
+    body{
+        h1{
+            font-size: 100px;
+        }
+        h2{
+            font-size: 66px;
+        }
+        h3{
+            font-size:  37px;
+        }
+        h4{
+            font-size: 21px ;
+        }
+        h5{
+            font-size: 19px ;
+        }
+        p{
+            font-size: 11px;
+        }
+        header{
+        nav{
+            hr{
+                display: none;
+            }
+            #hamburger{
+                display: block;
+                img{
+                    width: 48px;
+                    height: 38px;
+                }
+            }
+            ul.showcase{
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 120vh;
+                width: 90vw;
+            }
+            ul{
+                 padding: 100px 0px 0px 50px ;
+                 margin: 0px;
+                 transition: 1s;
+                li{
+                    margin-bottom: 20px;
+                    #icon-close{
+                        display: block;
+                        position: absolute;
+                        top: 30px;
+                        right: 10px;
+                       img{
+                        width: 48px;
+                        height: 48px;
+                       } 
+                    }
+                    a{
+                        font-size: 30px;
+                        margin-right: 0px;
+                       
+                    }
+                    a.active{
+                        @include nav(none);
+                        padding-right: 56vw;
+                        padding-bottom: 0px;
+                        border-right: 2px solid $cream;
+                    }
+                    a:active{
+                        @include nav(none);
+                        padding-right: 56vw;
+                        padding-bottom: 0px;
+                        border-right: 2px solid $cream; 
+                    }
+                }
 
+                }
+            }
+            
+        }
+    }
+    
     
 }
 
@@ -190,10 +272,12 @@ hr{
                     width: 500px;
                     margin: 0px;
                     padding: 30px 20px;
+
+                    }
                 }
                 
             }
         }
     
     }
-}
+
