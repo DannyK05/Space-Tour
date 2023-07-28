@@ -35,7 +35,16 @@ body{
                         @include circle(none);
                     }
                     a:hover{
-                        @include circle(hover)
+                        @include circle(hover);
+                    }
+                    a.active{
+                        @include circle(active);
+                        color: $cream;
+                        background-color: $cream;
+                        color: $background-color;
+                    }
+                    a:active{
+                        @include circle(active);
                     }
                    } 
                    
@@ -73,7 +82,6 @@ body{
 
 @media(max-width:480px){
     body{
-        width: 100%;
         header{
             nav{
                 ul{

@@ -38,6 +38,12 @@ body{
                     a:hover{
                         @include dot(hover)
                     }
+                    a.active{
+                        @include dot(active)
+                    }
+                    a:active{
+                        @include dot(active)
+                    }
                 }
             }
         }
@@ -74,9 +80,12 @@ body{
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column-reverse;
-                height: 450px;
+                height: 320px;
                 padding: 10px;
                 text-align: center;
+                .mode{
+                    margin-top: 50px;
+                }
                 p{
                     width: 42ch;
                     margin: 0px auto;

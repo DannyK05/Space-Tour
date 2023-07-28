@@ -39,7 +39,16 @@ body{
                         @include nav(hover);
                         padding-bottom: 8px;
                     }
-                    
+                    a.active{
+                        @include nav(active);
+                        color: $cream;
+                        padding-bottom: 8px;
+                    }
+                    a:active{
+                        @include nav(active);
+                        color: $cream;
+                        padding-bottom: 8px;
+                    }
                     
                     }
                 }
@@ -140,9 +149,6 @@ body{
                 text-align: center;
                 p{
                 width: 70ch;
-                }
-                .stats{
-                    
                 }
             }
             }

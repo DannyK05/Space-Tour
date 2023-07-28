@@ -15,11 +15,13 @@
     <nav>
       <img src="./assets/shared/logo.svg" alt="logo">
       <hr>
-      <ul>
+      <a id="hamburger" ><img src="./assets/shared/icon-hamburger.svg" alt="icon"></a>
+      <ul class="options">
+        <li><a id="icon-close"><img src="./assets/shared/icon-close.svg" alt="icon"></a></li>
         <li><a href="index.html">00 Home</a></li>
         <li><a href="destination-moon.html">01 Destination</a></li>
         <li><a href="crew-commander.html">02 Crew</a></li>
-        <li><a href="technology-vehicle.html">03 Technology</a></li>
+        <li><a class="active" href="technology-vehicle.html">03 Technology</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +32,7 @@
   
      <div class="content">
       <div class="num">
-        <span><a href="technology-vehicle.html#tech">1</a></span> 
+        <span><a class="active" href="technology-vehicle.html#tech">1</a></span> 
         <span><a href="technology-spaceport.html#tech">2</a></span>
         <span><a href="technology-capsule.html#tech">3</a></span>
        </div>
@@ -51,5 +53,9 @@
   </div>
   </div>
   </main>
+  <!-- Script link for hamburger option -->
+  <script src="./js/nav.js"></script>
+  <!-- Script for jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </body>
 </html>

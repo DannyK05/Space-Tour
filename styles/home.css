@@ -72,6 +72,9 @@ body header nav hr {
   position: absolute;
   z-index: 7;
 }
+body header nav #hamburger {
+  display: none;
+}
 body header nav ul {
   display: flex;
   justify-content: space-between;
@@ -86,6 +89,9 @@ body header nav ul {
 body header nav ul li {
   list-style-type: none;
 }
+body header nav ul li #icon-close {
+  display: none;
+}
 body header nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -98,6 +104,12 @@ body header nav ul li a:hover {
 body header nav ul li a:active {
   border-bottom: 2px solid rgb(255, 255, 255);
   padding-bottom: 30px;
+  color: #FFFFFF;
+}
+body header nav ul li a.active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 30px;
+  color: #FFFFFF;
 }
 body main {
   padding: 0px 50px;
@@ -111,6 +123,78 @@ hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 480px) {
+  body h1 {
+    font-size: 100px;
+  }
+  body h2 {
+    font-size: 66px;
+  }
+  body h3 {
+    font-size: 37px;
+  }
+  body h4 {
+    font-size: 21px;
+  }
+  body h5 {
+    font-size: 19px;
+  }
+  body p {
+    font-size: 11px;
+  }
+  body header nav hr {
+    display: none;
+  }
+  body header nav #hamburger {
+    display: block;
+  }
+  body header nav #hamburger img {
+    width: 48px;
+    height: 38px;
+  }
+  body header nav ul.showcase {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 120vh;
+    width: 90vw;
+  }
+  body header nav ul {
+    padding: 100px 0px 0px 50px;
+    margin: 0px;
+    transition: 1s;
+  }
+  body header nav ul li {
+    margin-bottom: 20px;
+  }
+  body header nav ul li #icon-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  body header nav ul li #icon-close img {
+    width: 48px;
+    height: 48px;
+  }
+  body header nav ul li a {
+    font-size: 30px;
+    margin-right: 0px;
+  }
+  body header nav ul li a.active {
+    border-bottom: none;
+    padding-right: 56vw;
+    padding-bottom: 0px;
+    border-right: 2px solid #FFFFFF;
+  }
+  body header nav ul li a:active {
+    border-bottom: none;
+    padding-right: 56vw;
+    padding-bottom: 0px;
+    border-right: 2px solid #FFFFFF;
+  }
+}
 @media (min-width: 481px) and (max-width: 768px) {
   body header nav hr {
     display: none;
@@ -121,33 +205,37 @@ hr {
     padding: 30px 20px;
   }
 }
-body.home {
+body {
   background: url("../assets/home/background-home-desktop.jpg") no-repeat;
   background-size: cover;
 }
-body.home main {
+body main {
   padding: 7vw 6vw 1vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body.home main .content h1 {
+body main .content h1 {
   margin: 2vw 0;
 }
-body.home main .content h5 {
+body main .content h5 {
   margin: 2vw 0;
 }
-body.home main .content p {
+body main .content p {
   width: 55ch;
   color: #D0D6F9;
 }
-body.home main .explore {
+body main .explore:hover {
+  visibility: visible;
+  transition: 0.4s;
+}
+body main .explore {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 80px;
   border-radius: 100%;
   visibility: hidden;
 }
-body.home main .explore .button {
+body main .explore .button {
   background-color: #FFFFFF;
   border-radius: 100%;
   padding: 100px;
@@ -155,45 +243,44 @@ body.home main .explore .button {
   visibility: visible;
   cursor: pointer;
 }
-body.home main .explore .button p {
+body main .explore .button p {
   color: #0B0D17;
   font-family: "Bellefair", serif;
   font-size: 22px;
   text-transform: uppercase;
 }
 
-.button:hover .explore {
-  visibility: visible;
-}
-
 @media (max-width: 480px) {
-  body.home {
+  body {
     background: url("../assets/home/background-home-mobile.jpg") no-repeat;
     background-size: cover;
   }
-  body.home header nav ul {
+  body header nav ul.options {
     display: none;
   }
-  body.home main {
+  body main {
     flex-direction: column;
   }
-  body.home main .content {
+  body main .content {
     text-align: center;
   }
-  body.home main .content p {
+  body main .content p {
     width: 42ch;
     margin: 10px auto;
   }
+  body .explore {
+    padding: 50%;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  body.home {
+  body {
     background: url("../assets/home/background-home-tablet.jpg") no-repeat;
     background-size: cover;
   }
-  body.home main {
+  body main {
     flex-direction: column;
   }
-  body.home main .content p {
+  body main .content p {
     width: 50ch;
   }
 }/*# sourceMappingURL=home.css.map */

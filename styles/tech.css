@@ -72,6 +72,9 @@ body header nav hr {
   position: absolute;
   z-index: 7;
 }
+body header nav #hamburger {
+  display: none;
+}
 body header nav ul {
   display: flex;
   justify-content: space-between;
@@ -86,6 +89,9 @@ body header nav ul {
 body header nav ul li {
   list-style-type: none;
 }
+body header nav ul li #icon-close {
+  display: none;
+}
 body header nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -98,6 +104,12 @@ body header nav ul li a:hover {
 body header nav ul li a:active {
   border-bottom: 2px solid rgb(255, 255, 255);
   padding-bottom: 30px;
+  color: #FFFFFF;
+}
+body header nav ul li a.active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 30px;
+  color: #FFFFFF;
 }
 body main {
   padding: 0px 50px;
@@ -111,6 +123,78 @@ hr {
   border: 0.2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 480px) {
+  body h1 {
+    font-size: 100px;
+  }
+  body h2 {
+    font-size: 66px;
+  }
+  body h3 {
+    font-size: 37px;
+  }
+  body h4 {
+    font-size: 21px;
+  }
+  body h5 {
+    font-size: 19px;
+  }
+  body p {
+    font-size: 11px;
+  }
+  body header nav hr {
+    display: none;
+  }
+  body header nav #hamburger {
+    display: block;
+  }
+  body header nav #hamburger img {
+    width: 48px;
+    height: 38px;
+  }
+  body header nav ul.showcase {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 120vh;
+    width: 90vw;
+  }
+  body header nav ul {
+    padding: 100px 0px 0px 50px;
+    margin: 0px;
+    transition: 1s;
+  }
+  body header nav ul li {
+    margin-bottom: 20px;
+  }
+  body header nav ul li #icon-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  body header nav ul li #icon-close img {
+    width: 48px;
+    height: 48px;
+  }
+  body header nav ul li a {
+    font-size: 30px;
+    margin-right: 0px;
+  }
+  body header nav ul li a.active {
+    border-bottom: none;
+    padding-right: 56vw;
+    padding-bottom: 0px;
+    border-right: 2px solid #FFFFFF;
+  }
+  body header nav ul li a:active {
+    border-bottom: none;
+    padding-right: 56vw;
+    padding-bottom: 0px;
+    border-right: 2px solid #FFFFFF;
+  }
+}
 @media (min-width: 481px) and (max-width: 768px) {
   body header nav hr {
     display: none;
@@ -158,6 +242,17 @@ body main .overall .content .num span a {
 body main .overall .content .num span a:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+body main .overall .content .num span a.active {
+  border: 1px solid rgb(255, 255, 255);
+  color: #0B0D17;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+}
+body main .overall .content .num span a:active {
+  border: 1px solid rgb(255, 255, 255);
+  color: #0B0D17;
+}
 body main .overall .content h4 {
   margin: 1vw 0px 1.5vw;
 }
@@ -183,9 +278,6 @@ body main .overall .capsule {
 }
 
 @media (max-width: 480px) {
-  body {
-    width: 100%;
-  }
   body header nav ul {
     display: none;
   }
