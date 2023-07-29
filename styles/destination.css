@@ -79,7 +79,7 @@ body header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(39, 39, 43, 0.1764705882);
   -webkit-backdrop-filter: blur(2em);
   backdrop-filter: blur(2em);
   height: auto;
@@ -124,6 +124,12 @@ hr {
 }
 
 @media (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
   body h1 {
     font-size: 100px;
   }
@@ -164,6 +170,7 @@ hr {
     padding: 100px 0px 0px 50px;
     margin: 0px;
     transition: 1s;
+    overflow: hidden;
   }
   body header nav ul li {
     margin-bottom: 20px;
@@ -181,16 +188,21 @@ hr {
   body header nav ul li a {
     font-size: 30px;
     margin-right: 0px;
+    width: 73vw;
+    display: block;
   }
   body header nav ul li a.active {
     border-bottom: none;
-    padding-right: 56vw;
     padding-bottom: 0px;
     border-right: 2px solid #FFFFFF;
   }
   body header nav ul li a:active {
     border-bottom: none;
-    padding-right: 56vw;
+    padding-bottom: 0px;
+    border-right: 2px solid #FFFFFF;
+  }
+  body header nav ul li a:hover {
+    border-bottom: none;
     padding-bottom: 0px;
     border-right: 2px solid #FFFFFF;
   }

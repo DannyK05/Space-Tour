@@ -124,7 +124,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgba(255, 255, 255, 0.5);
+    background-color: #27272b2d;
     -webkit-backdrop-filter:  blur(2em);
      backdrop-filter: blur(2em);
     height: auto;
@@ -178,7 +178,11 @@ hr{
 }
 
 @media (max-width:480px){
+    html{
+        overflow-x: hidden;
+    }
     body{
+        overflow-x: hidden;
         h1{
             font-size: 100px;
         }
@@ -221,6 +225,7 @@ hr{
                  padding: 100px 0px 0px 50px ;
                  margin: 0px;
                  transition: 1s;
+                 overflow: hidden;
                 li{
                     margin-bottom: 20px;
                     #icon-close{
@@ -236,19 +241,24 @@ hr{
                     a{
                         font-size: 30px;
                         margin-right: 0px;
+                        width: 73vw;
+                        display: block;
                        
                     }
                     a.active{
                         @include nav(none);
-                        padding-right: 56vw;
                         padding-bottom: 0px;
                         border-right: 2px solid $cream;
                     }
                     a:active{
                         @include nav(none);
-                        padding-right: 56vw;
                         padding-bottom: 0px;
                         border-right: 2px solid $cream; 
+                    }
+                    a:hover{
+                        @include nav(none);
+                        padding-bottom: 0px;
+                        border-right: 2px solid $cream;
                     }
                 }
 
